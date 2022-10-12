@@ -13,7 +13,7 @@ const PizzaList = ({ pizzaList }) => {
         onChange={(e) => setQuery(e.target.value.toLowerCase())}
       />
 
-      <label for="cars">Chọn bộ lọc</label>
+      <label htmlFor="cars">Chọn bộ lọc</label>
       <select name="cars" id="cars">
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
