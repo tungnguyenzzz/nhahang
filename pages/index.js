@@ -7,7 +7,7 @@ import AddButton from "../components/AddButton";
 import Featured from "../components/Featured";
 import PizzaList from "../components/PizzaList";
 import styles from "../styles/Home.module.css";
-
+import dbConnect from "../util/mongo";
 export default function Home({ pizzaList, admin }) {
   const [close, setClose] = useState(true);
   return (
@@ -32,8 +32,8 @@ export const getServerSideProps = async (ctx) => {
   if (myCookie.token === process.env.TOKEN) {
     admin = true;
   }
-
-  const res = await axios.get("http://localhost:3000/api/products");
+  await dbConnect();
+  const res = await axios.get("https://nhahang.vercel.app/api/products");
   return {
     props: {
       pizzaList: res.data,
