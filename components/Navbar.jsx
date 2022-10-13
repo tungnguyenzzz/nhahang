@@ -12,20 +12,31 @@ const Navbar = () => {
           <Image src="/img/telephone.png" alt="" width="32" height="32" />
         </div>
         <div className={styles.texts}>
-          <div className={styles.text}>ORDER NOW!</div>
-          <div className={styles.text}>012 345 678</div>
+          <div className={styles.text}>ĐẶT NGAY!</div>
+          <div className={styles.text}>𝟬𝟯𝟯.𝟰𝟵𝟴.𝟲𝟱𝟭𝟴</div>
         </div>
       </div>
       <div className={styles.item}>
         <ul className={styles.list}>
           <Link href="/" passHref>
-            <li className={styles.listItem}>Homepage</li>
+            <li className={styles.listItem}>TRANG CHỦ</li>
           </Link>
-          <li className={styles.listItem}>Products</li>
-          <li className={styles.listItem}>Menu</li>
-          <li className={styles.listItem}>Events</li>
-          <li className={styles.listItem}>Blog</li>
-          <li className={styles.listItem}>Contact</li>
+
+          <Link href="/menus" passHref>
+            <li className={styles.listItem}>SET MENU</li>
+          </Link>
+          <Link href="/dattiec" passHref>
+            <li className={styles.listItem}>ĐẶT TIỆC</li>
+          </Link>
+          <Link href="/events" passHref>
+            <li className={styles.listItem}>SỰ KIỆN</li>
+          </Link>
+          <Link href="/blogs" passHref>
+            <li className={styles.listItem}>TIN TỨC</li>
+          </Link>
+          <Link href="/contacts" passHref>
+            <li className={styles.listItem}>LIÊN HỆ</li>
+          </Link>
         </ul>
       </div>
 
@@ -49,14 +60,27 @@ const Navbar = () => {
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z" /></svg>
         </label>
         <ul className={styles.list_mobile}>
+
+
           <Link href="/" passHref>
-            <li className={styles.listItem_mobile}>Homepage</li>
+            <li className={styles.listItem_mobile}>TRANG CHỦ</li>
           </Link>
-          <li className={styles.listItem_mobile}>Products</li>
-          <li className={styles.listItem_mobile}>Menu</li>
-          <li className={styles.listItem_mobile}>Events</li>
-          <li className={styles.listItem_mobile}>Blog</li>
-          <li className={styles.listItem_mobile}>Contact</li>
+
+          <Link href="/menus" passHref>
+            <li className={styles.listItem_mobile}>SET MENU</li>
+          </Link>
+          <Link href="/dattiec" passHref>
+            <li className={styles.listItem_mobile}>ĐẶT TIỆC</li>
+          </Link>
+          <Link href="/events" passHref>
+            <li className={styles.listItem_mobile}>SỰ KIỆN</li>
+          </Link>
+          <Link href="/blogs" passHref>
+            <li className={styles.listItem_mobile}>TIN TỨC</li>
+          </Link>
+          <Link href="/contacts" passHref>
+            <li className={styles.listItem_mobile}>LIÊN HỆ</li>
+          </Link>
         </ul>
       </div>
     </div>

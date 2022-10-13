@@ -1,7 +1,7 @@
 .container {
   height: 100px;
   padding: 0px 50px;
-  background-color: #d1411e;
+  background-color: #FFFFCC;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -34,7 +34,7 @@
 }
 
 .callButton {
-  background-color: white;
+  background-color: black;
   border-radius: 50%;
   padding: 10px;
   width: 50px;
@@ -43,7 +43,7 @@
 
 .texts {
   margin-left: 20px;
-  color: white;
+  color: black;
 }
 
 .text:first-child {
@@ -61,7 +61,7 @@
   display: flex;
   align-items: center;
   list-style: none;
-  color: white;
+  color: black;
 }
 
 .listItem {
@@ -81,13 +81,13 @@
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: white;
+  background-color: black;
   padding: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: #d1411e;
+  color: white;
 }
 
 .item_mobile {
