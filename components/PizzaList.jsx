@@ -1,12 +1,15 @@
 import { useState } from "react";
 import styles from "../styles/PizzaList.module.css";
 import PizzaCard from "./PizzaCard";
-
+import { FacebookProvider, CustomChat } from 'react-facebook';
 const PizzaList = ({ pizzaList }) => {
   const [query, setQuery] = useState("");
   return (
     <div className={styles.container}>
-      <a href="tel:0972583033">0812165826</a>
+      <FacebookProvider appId="445580737497709" chatSupport>
+        <CustomChat pageId="100085506585411" minimized={false} />
+      </FacebookProvider>
+      <a className={styles.btnCall} href="tel:0972583033"><img className={styles.imgCall} src="https://library.kissclipart.com/20180829/gwq/kissclipart-mobile-phone-icon-green-clipart-mobile-phones-comp-704b91b3d8e87f1a.png"></img></a>
       <input
         className={styles.search}
         placeholder="Search..."
