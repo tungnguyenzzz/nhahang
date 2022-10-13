@@ -6,28 +6,23 @@ const PizzaList = ({ pizzaList }) => {
   const [query, setQuery] = useState("");
   return (
     <div className={styles.container}>
-      <FacebookProvider appId="445580737497709" chatSupport>
-        <CustomChat pageId="100085506585411" minimized={false} />
-      </FacebookProvider>
-      <a className={styles.btnCall} href="tel:0972583033"><img className={styles.imgCall} src="https://library.kissclipart.com/20180829/gwq/kissclipart-mobile-phone-icon-green-clipart-mobile-phones-comp-704b91b3d8e87f1a.png"></img></a>
+
       <input
         className={styles.search}
         placeholder="Search..."
         onChange={(e) => setQuery(e.target.value.toLowerCase())}
       />
 
-      <label htmlFor="cars">Chọn bộ lọc</label>
+      <label htmlFor="cars">Thực đơn chọn món</label>
       <select name="cars" id="cars">
         <option value="volvo">Volvo</option>
         <option value="saab">Saab</option>
         <option value="opel">Opel</option>
         <option value="audi">Audi</option>
       </select>
-      <h1 className={styles.title}>THE BEST PIZZA IN TOWN</h1>
+      <h1 className={styles.title}>CÁC MÓN NỔI BẬT NHẤT TẠI SABAY</h1>
       <p className={styles.desc}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit arcu
-        in pretium molestie. Interdum et malesuada fames acme. Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit.
+        “Nhà hàng Sabay ngon, đẹp và trang trọng nhằm tạo ra không gian thưởng thức ẩm thực đỉnh cao, chính là mục tiêu mà Sabay chúng tôi thật sự cố gắng theo đuổi. Dẫu còn nhiều trăn trở và khó khăn, đội ngũ sáng lập của nhà hàng Sabay luôn lắng nghe và xem nguyện vọng của khách hàng lên hàng đầu. Bên cạnh đó, Sabay coi việc kết hợp tinh hoa ẩm thực từ các nguyên liệu của quê hương nhằm phục vụ cho du khách các món ngon đặc sản tuyệt vời nhất!
       </p>
       <div className={styles.wrapper}>
         {pizzaList.filter((asd) =>
